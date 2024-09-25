@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="inico&barra.css">
+    <title>SYNC</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="avatar.jpg" id="user_avatar" alt="Avatar">
+    
+                <p id="user_infos">
+                    <span class="item-description">
+                        SYNC
+                    </span>
+                </p>
+            </div>
+    
+            <ul id="side_items">
+                <li class="side-item active" id="dashboard-item">
+                    <a href="inicio&barra.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="item-description">
+                            Pagina Inicial
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item" id="usuarios-item">
+                    <a href="calendario.html">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="item-description">
+                            Calendario
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item" id="progresso-item">
+                    <a href="progresso.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="item-description">
+                            Progresso
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item" id="foco-item">
+                    <a href="foco.html">
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <span class="item-description">
+                            Foco
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item" id="especialistas-item">
+                    <a href="especialistas.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="item-description">
+                            Especialistas
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item" id="suporte-item">
+                    <a href="suporte.html">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="item-description">
+                            Suporte
+                        </span>
+                    </a>
+                </li>
+            </ul>
+    
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">
+                    Logout
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <img src="top_image.jpg" alt="Imagem Superior" class="top-banner">
+        <i class="fa-solid fa-house main-house-icon">
+        </i>
+        <div class="title">
+        <h1>Página Inicial</h1> 
+    </div>
+    <div class="subtitulo">
+        <h2>Não aceite permanecer na sua zona de conforto. O progresso é desconfortavel, e por isso te faz evoluir!</h2>
+    </div>
+    <div class="linha"><hr></div>
+    <div class="hoje">
+        <h3>Para Hoje:</h3>
+    </div>
+    
+    <div class="to-do-container">
+        <div id="to_do">
+            <h1>Tarefas Importantes:</h1>
+    
+            <form class="to-do-form">
+                <input type="text" id="task-input" placeholder="Escreva sua tarefa aqui" required>
+                <button type="submit" class="form-button">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+    
+            <div id="tasks"></div>
+        </div>
+        <div id="to_do_5">
+            <h1>Tarefas em 5 minutos:</h1>
+    
+            <form class="to-do-forms">
+                <input type="text" id="task-inputt" placeholder="Escreva sua tarefa aqui" required>
+                <button type="submit" class="form-buttonn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+    
+            <div id="tasks_5"></div>
+        </div>
+    </div>
+
+    <div class="hoje">
+        <h3>Para essa semana:</h3>
+    </div>
+    <div class="to-do-container">
+        <div id="to_do_s">
+            <h1>Tarefas Importantes:</h1>
+    
+            <form class="to-do-forme">
+                <input type="text" id="task-inputa" placeholder="Escreva sua tarefa aqui" required>
+                <button type="submit" class="form-buttonn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+    
+            <div id="tasks_s"></div>
+        </div>
+        <div id="to_do_h">
+            <h1>Hábitos Semanal:</h1>
+    
+            <form class="to-do-forma">
+                <input type="text" id="task-inpute" placeholder="Escreva sua tarefa aqui" required>
+                <button type="submit" class="form-buttone">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+    
+            <div id="tasks_h"></div>
+        </div>
+    </div>
+
+
+    <div class="Cronograma"><h1>Cronograma Semanal</h1></div>
+            
+         <div class="semanas">  
+            <div id="semana">
+                <h1>Domingo</h1>
+                <form class="to-do-form" id="form-domingo">
+                    <input type="text" id="task-input-domingo" placeholder="Escreva..." required>
+                    <button type="submit" class="cronograma-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+                <div id="tasks-domingo"></div>
+                
+            </div>
+
+            <div id="semana">
+                <h1>Segunda</h1>
+                <form class="to-do-form" id="form-segunda">
+                    <input type="text" id="task-input-segunda" placeholder="Escreva..." required>
+                    <button type="submit" class="cronograma-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+                <div id="tasks-segunda"></div>
+            </div>
+
+            <div id="semana">
+                <h1>Terça</h1>
+                <form class="to-do-form" id="form-terca">
+                    <input type="text" id="task-input-terca" placeholder="Escreva..." required>
+                    <button type="submit" class="cronograma-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+                <div id="tasks-terca"></div>
+            </div>
+
+            <div id="semana">
+                <h1>Quarta</h1>
+                <form class="to-do-form" id="form-quarta">
+                    <input type="text" id="task-input-quarta" placeholder="Escreva..." required>
+                    <button type="submit" class="cronograma-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+                <div id="tasks-quarta"></div>
+                
+            </div>
+
+            <div id="semana">
+                <h1>Quinta</h1>
+                <form class="to-do-form" id="form-quinta">
+                    <input type="text" id="task-input-quinta" placeholder="Escreva..." required>
+                    <button type="submit" class="cronograma-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+                <div id="tasks-quinta"></div>
+            </div>
+
+            <div id="semana">
+                <h1>Sexta</h1>
+                <form class="to-do-form" id="form-sexta">
+                    <input type="text" id="task-input-sexta" placeholder="Escreva..." required>
+                    <button type="submit" class="cronograma-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+                <div id="tasks-sexta"></div>
+            </div>
+
+            <div id="semana">
+                <h1>Sábado</h1>
+                <form class="to-do-form" id="form-sabado">
+                    <input type="text" id="task-input-sabado" placeholder="Escreva..." required>
+                    <button type="submit" class="cronograma-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+                <div id="tasks-sabado"></div>
+            </div>
+        </div>
+          
+    
+    
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="barra.js"></script>
+    <script src="tarefas.js"></script>
+</body>
+</html>

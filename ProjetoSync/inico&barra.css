@@ -1,0 +1,447 @@
+/* Estilos Globais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffffffd3;
+}
+
+main {
+    padding: 20px;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+}
+
+.top-banner {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 20px;
+}
+
+.main-house-icon {
+    font-size: 4.9rem;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-top: -60px;
+    color: #c8c6d8;
+}
+
+.title {
+    margin-left: 130px;
+}
+
+.subtitulo {
+    font-size: 13px; 
+    color: #ffffff; 
+    width: 93%;
+    margin-left: 50px; 
+    margin-top: 25px; 
+    background-color: #f8aa00b2; 
+    text-align: center;
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: inline-block;
+}
+
+.linha hr {
+    border: none;
+    border-top: 1px solid #504f4f4f; 
+    width: 93%; 
+    margin: 35px auto;
+    margin-left: 50px;
+}
+
+.hoje h3 {
+    width: 93%;
+    margin: 0; 
+    font-size: 18px; 
+    margin-left: 50px;
+    margin-top: 25px; 
+    background-color: #e2c72f81; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: inline-block;
+}
+
+.Cronograma {
+    width: 93%;
+    margin: 0;
+    margin-left: 50px;
+    background-color: #55545438;
+    font-size: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.247); 
+}
+
+#semana h1 {
+    color: #0a0a0a;
+    width: 130px;
+    background-color: #d2dbf0;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.semanas {
+    display: flex; 
+    gap: 30px;
+    justify-content: center;
+    margin-left: 23px;
+}
+
+#semana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6e1c76b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 500px;  /* Altura do retângulo */
+    width: 145px;   /* Largura do retângulo */
+    margin-top: 20px;
+}
+
+/* Estilos da Barra Lateral */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ecebe5;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+    z-index: 2;
+    width: 82px;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_infos span:last-child {
+    color: #555454;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item.active {
+    background-color: #ffa704;
+}
+
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #d2dbf0;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+}
+
+.side-item.active a {
+    color: #e3e9f7;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#logout {
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #ffa704;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+/* Estilos para todas as listas de tarefas */
+#to_do, #to_do_5, #to_do_s, #to_do_h {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: transparent;
+    padding: 18px;
+    border-radius: 8px;
+    width: 500px;
+    margin-left: 60px;
+}
+
+#to_do h1, #to_do_5 h1, #to_do_s h1, #to_do_h h1 {
+    color: #000000;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 470px;
+    background-color: #b5e5f852;
+    padding: 7px;
+}
+
+.to-do-form, .to-do-forms, .to-do-forme, .to-do-forma {
+    display: flex;
+    width: 100%;
+}
+
+.to-do-form input, .to-do-forms input, .to-do-forme input, .to-do-forma input {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    width: 85%;
+    padding: 4px;
+    border-bottom: 2px solid #837863;
+}
+
+.to-do-container {
+    display: flex;
+}
+
+.to-do-form input:focus-visible, .to-do-forms input:focus-visible, .to-do-forme input:focus-visible, .to-do-forma input:focus-visible {
+    outline: none;
+}
+
+
+.form-button, .form-buttonn, .form-buttonne, .form-buttone {
+    border: none;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: #ff9100b0;
+    border-radius: 100%;
+    font-size: 20px;
+    transition: scale 0.5s ease;
+}
+
+.form-button:hover, .form-buttonn:hover, .form-buttonne:hover, .form-buttone:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#tasks, #tasks_5, #tasks_s, #tasks_h {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+/* Estilos das tarefas */
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #262626;
+    background-color: #6c6c6e1e;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.task .progress {
+    margin-right: 10px;
+}
+
+.task .progress.done + .task-description {
+    text-decoration: line-through;
+    color: #e5f9ffa7;
+}
+
+.task .task-description {
+    font-size: 16px;
+    color: #000000;
+    padding: 4px 0px;
+    width: 100%;
+}
+
+.task .task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    font-size: 16px;
+}
+
+.action-button.edit-button {
+    color: #ec9615;
+}
+
+.action-button.delete-button {
+    color: #000000cb;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Editar tarefas */
+.edit-task {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.edit-task input {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    width: 100%;
+    padding: 4px;
+    border-bottom: 2px solid #7a5959;
+}
+
+.edit-task input:focus-visible {
+    outline: none;
+}
+
+.confirm-button {
+    border: none;
+    background-color: #ff9100b0;
+    border-radius: 100%;
+    font-size: 20px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.confirm-button:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    #to_do, #to_do_5, #to_do_s, #to_do_h {
+        width: 300px;
+    }
+}
+
+
+.cronograma-button {
+    border: none;               /* Remove a borda */
+    outline: none;              /* Remove o contorno ao focar */
+    box-shadow: none;           /* Remove sombras que possam parecer uma borda */
+    background: none;           /* Remove o fundo */
+    color: inherit;             /* Mantém a cor do texto padrão */
+    cursor: pointer;            /* Aponta que é um botão */
+}
+
+.cronograma-button:focus {
+    outline: none !important;   /* Garante que não haja contorno ao focar */
+    box-shadow: none !important; /* Remove sombras ao focar */
+}
+
+.confirm-button {
+    cursor: pointer;
+    display: inline-block;
+}
+
